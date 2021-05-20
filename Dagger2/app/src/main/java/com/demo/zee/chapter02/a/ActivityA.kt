@@ -9,7 +9,7 @@ import javax.inject.Inject
 
 // 1. 在构造方法上使用@Inject注解，就是告诉Dagger可以通过这个方法来实例化一个User对象
 class User @Inject constructor() {
-    val name = "Dagger"
+    val name = "User from @Inject constructor()"
 }
 
 // 2. 定义一个Dagger组件，@Component注解会生成一个实现类，以Dagger打头，即DaggerApplicationComponent

@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.demo.databinding.ActivityZeeBinding
 import com.demo.zee.chapter01.ManualActivity
 import com.demo.zee.chapter02.a.ActivityA
+import com.demo.zee.chapter02.b.ActivityModule
+import com.demo.zee.chapter02.c.ActivitySingleton
 
 
 class ZeeActivity : AppCompatActivity() {
@@ -27,6 +29,16 @@ class ZeeActivity : AppCompatActivity() {
 
     fun chapter02a(v: View) {
         val intent = Intent(this, ActivityA::class.java)
+        startActivity(intent)
+    }
+
+    fun chapter02b(v: View) {
+        val intent = Intent(this, ActivityModule::class.java)
+        startActivity(intent)
+    }
+
+    fun chapter02c(v: View) {
+        val intent = Intent(this, ActivitySingleton::class.java)
         startActivity(intent)
     }
 }

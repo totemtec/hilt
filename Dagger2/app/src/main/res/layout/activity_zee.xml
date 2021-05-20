@@ -19,5 +19,17 @@
         android:onClick="chapter02a"
         android:text="Chapter02: 使用Dagger快速实现依赖注入" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="chapter02b"
+        android:text="Chapter02: 使用Module提供对象实例" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="chapter02c"
+        android:text="Chapter02: 使用作用域实现单例" />
+
 
 </LinearLayout>
