@@ -5,3 +5,4 @@
 3. 使用作用域实现单例 c.ActivitySingleton
 
 
+3. 注解指定实现类 h.ActivityAnnotation

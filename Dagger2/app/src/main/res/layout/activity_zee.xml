@@ -43,5 +43,23 @@
         android:onClick="chapter02e"
         android:text="Chapter02: 组件依赖" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="chapter02f"
+        android:text="Chapter02: 子组件" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="chapter02g"
+        android:text="Chapter02: Binds注入接口实例" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="chapter02h"
+        android:text="Chapter02: 注解指定注入接口实例类型" />
+
 
 </LinearLayout>

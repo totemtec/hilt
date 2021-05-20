@@ -11,6 +11,9 @@ import com.demo.zee.chapter02.b.ActivityModule
 import com.demo.zee.chapter02.c.ActivitySingleton
 import com.demo.zee.chapter02.d.ActivityScope
 import com.demo.zee.chapter02.e.ActivityDependency
+import com.demo.zee.chapter02.f.ActivitySubcomponent
+import com.demo.zee.chapter02.g.ActivityBinds
+import com.demo.zee.chapter02.h.ActivityAnnotation
 
 
 class ZeeActivity : AppCompatActivity() {
@@ -51,6 +54,21 @@ class ZeeActivity : AppCompatActivity() {
 
     fun chapter02e(v: View) {
         val intent = Intent(this, ActivityDependency::class.java)
+        startActivity(intent)
+    }
+
+    fun chapter02f(v: View) {
+        val intent = Intent(this, ActivitySubcomponent::class.java)
+        startActivity(intent)
+    }
+
+    fun chapter02g(v: View) {
+        val intent = Intent(this, ActivityBinds::class.java)
+        startActivity(intent)
+    }
+
+    fun chapter02h(v: View) {
+        val intent = Intent(this, ActivityAnnotation::class.java)
         startActivity(intent)
     }
 }
