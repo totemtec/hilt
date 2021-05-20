@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".zee.ZeeActivity">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inject"
-        android:onClick="gotoActivityInject"/>
+        android:onClick="chapter01"
+        android:text="Chapter01: 手动依赖注入的实现" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Binds"
-        android:onClick="gotoActivityBinds"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Provides"
-        android:onClick="gotoActivityProvides"/>
+        android:onClick="chapter02a"
+        android:text="Chapter02: 使用Dagger快速实现依赖注入" />
 
 
 </LinearLayout>

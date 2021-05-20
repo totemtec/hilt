@@ -4,25 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".b.ActivityBinds">
 
     <Button
+        android:id="@+id/info_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inject"
-        android:onClick="gotoActivityInject"/>
+        android:text="Show Info"/>
 
-    <Button
+    <TextView
+        android:id="@+id/info_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Binds"
-        android:onClick="gotoActivityBinds"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Provides"
-        android:onClick="gotoActivityProvides"/>
-
+        android:text="Please click button"/>
 
 </LinearLayout>
