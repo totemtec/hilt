@@ -3,7 +3,7 @@
     package="com.demo">
 
     <application
-        android:name=".zee.chapter02.c.MyApplication"
+        android:name=".zee.chapter02.d.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -44,6 +44,8 @@
         <activity android:name=".zee.chapter02.b.ActivityModule" />
         <activity android:name=".zee.chapter02.c.ActivitySingleton" />
         <activity android:name=".zee.chapter02.c.SecondActivity" />
+        <activity android:name=".zee.chapter02.d.ActivityScope" />
+        <activity android:name=".zee.chapter02.d.SecondActivity" />
 
     </application>
 

@@ -9,6 +9,7 @@ import com.demo.zee.chapter01.ManualActivity
 import com.demo.zee.chapter02.a.ActivityA
 import com.demo.zee.chapter02.b.ActivityModule
 import com.demo.zee.chapter02.c.ActivitySingleton
+import com.demo.zee.chapter02.d.ActivityScope
 
 
 class ZeeActivity : AppCompatActivity() {
@@ -39,6 +40,11 @@ class ZeeActivity : AppCompatActivity() {
 
     fun chapter02c(v: View) {
         val intent = Intent(this, ActivitySingleton::class.java)
+        startActivity(intent)
+    }
+
+    fun chapter02d(v: View) {
+        val intent = Intent(this, ActivityScope::class.java)
         startActivity(intent)
     }
 }

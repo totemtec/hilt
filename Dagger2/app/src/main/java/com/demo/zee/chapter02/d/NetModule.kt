@@ -1,17 +1,14 @@
-package com.demo.zee.chapter02.c
+package com.demo.zee.chapter02.d
 
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
-import javax.inject.Singleton
 
 @Module
 class NetModule {
 
-    // 1. 作用域注解，将某个对象的生命周期，限定为其组件的生命周期。所以要么不使用作用域，要么和组件的作用域一致
-    // @Singleton是dagger默认提供的一个作用域实现
-    @Singleton
+    @MyScope
     @Provides
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
@@ -20,13 +17,13 @@ class NetModule {
             .build()
     }
 
-    @Singleton
+    @MyScope
     @Provides
     fun provideApiService(retrofit: Retrofit): ApiService {
         return retrofit.create(ApiService::class.java)
     }
 
-    @Singleton
+    @MyScope
     @Provides
     fun provideOkHttpClient(): OkHttpClient {
         return OkHttpClient()
