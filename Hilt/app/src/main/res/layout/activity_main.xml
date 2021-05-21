@@ -39,6 +39,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Jetpack ViewModel"
+        android:onClick="gotoJetpackViewModel"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Binds"
         android:onClick="gotoBinds"/>
 

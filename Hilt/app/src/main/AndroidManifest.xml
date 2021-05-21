@@ -27,6 +27,7 @@
         <activity android:name=".c.ActivitySecond" />
         <activity android:name=".d.ActivityDefaultBinding" />
         <activity android:name=".e.ActivityPredefinedQualifiers" />
+        <activity android:name=".f.ActivityJetpack" />
 
     </application>
 

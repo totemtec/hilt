@@ -22,7 +22,6 @@ class AppModule {
         return User()
     }
 
-    @ActivityScoped
     @Provides
     fun provideViewModel(
         user: User,

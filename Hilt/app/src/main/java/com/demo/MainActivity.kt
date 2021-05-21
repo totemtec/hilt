@@ -9,6 +9,7 @@ import com.demo.b.ActivityModule
 import com.demo.c.ActivityScope
 import com.demo.d.ActivityDefaultBinding
 import com.demo.e.ActivityPredefinedQualifiers
+import com.demo.f.ActivityJetpack
 
 class MainActivity : AppCompatActivity() {
 
@@ -43,4 +44,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun gotoJetpackViewModel(v: View) {
+        val intent = Intent(this, ActivityJetpack::class.java)
+        startActivity(intent)
+    }
 }
