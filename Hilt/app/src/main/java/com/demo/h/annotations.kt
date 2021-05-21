@@ -1,4 +1,4 @@
-package com.demo.c
+package com.demo.h
 
 import javax.inject.Qualifier
 

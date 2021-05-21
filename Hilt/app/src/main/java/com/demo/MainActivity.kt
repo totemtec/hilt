@@ -4,6 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.demo.a.ActivityInject
+import com.demo.b.ActivityModule
+import com.demo.c.ActivityScope
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,9 +15,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun chapter01(v: View) {
-//        val intent = Intent(this, Activity01::class.java)
-//        startActivity(intent)
+    fun gotoInject(v: View) {
+        val intent = Intent(this, ActivityInject::class.java)
+        startActivity(intent)
+    }
+
+    fun gotoModule(v: View) {
+        val intent = Intent(this, ActivityModule::class.java)
+        startActivity(intent)
+    }
+
+    fun gotoScoped(v: View) {
+        val intent = Intent(this, ActivityScope::class.java)
+        startActivity(intent)
     }
 
 }

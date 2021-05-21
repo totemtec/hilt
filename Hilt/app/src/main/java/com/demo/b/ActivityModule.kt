@@ -1,4 +1,4 @@
-package com.demo.a
+package com.demo.b
 
 import android.os.Bundle
 import android.widget.Button
@@ -9,10 +9,10 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class ActivityInject : AppCompatActivity() {
+class ActivityModule : AppCompatActivity() {
 
     @Inject
-    lateinit var user:User
+    lateinit var user: User
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,9 +20,7 @@ class ActivityInject : AppCompatActivity() {
 
         val infoView: TextView = findViewById(R.id.info_view)
 
-        user.name = "张三"
-        user.age = 30
-        infoView.text = user.toString()
+        infoView.text = "$user"
     }
 
 }

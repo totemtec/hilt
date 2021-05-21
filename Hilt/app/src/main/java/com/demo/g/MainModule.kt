@@ -1,4 +1,4 @@
-package com.demo.b
+package com.demo.g
 
 import android.util.Log
 import dagger.Binds
@@ -12,7 +12,7 @@ interface Engine{
     fun off()
 }
 
-class ChinaEngine @Inject constructor():Engine{
+class ChinaEngine @Inject constructor(): Engine {
     override fun on() {
         Log.i("zrm", "ChinaEngine on")
     }
@@ -21,7 +21,7 @@ class ChinaEngine @Inject constructor():Engine{
     }
 }
 
-class ChinaCar @Inject constructor(val engine:Engine){
+class ChinaCar @Inject constructor(val engine: Engine){
     lateinit var name:String
 }
 
@@ -32,5 +32,5 @@ interface MainModule {
      * 使用Binds指定子类或实现类
      */
     @Binds
-    fun bindEngine(chinaEngine:ChinaEngine):Engine
+    fun bindEngine(chinaEngine: ChinaEngine): Engine
 }

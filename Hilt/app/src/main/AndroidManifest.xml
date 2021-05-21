@@ -20,8 +20,11 @@
         </activity>
 
         <activity android:name=".a.ActivityInject"/>
-        <activity android:name=".b.ActivityBinds"/>
-        <activity android:name=".c.ActivityProvides"/>
+        <activity android:name=".g.ActivityBinds"/>
+        <activity android:name=".h.ActivityProvides"/>
+        <activity android:name=".b.ActivityModule" />
+        <activity android:name=".c.ActivityScope" />
+        <activity android:name=".c.ActivitySecond" />
 
     </application>
 

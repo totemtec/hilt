@@ -7,5 +7,5 @@ class User @Inject constructor()
 {
     var name:String=""
     var age = 0
-    override fun toString()="User(name=$name age$age)"
+    override fun toString()="User(name=$name age=$age)"
 }

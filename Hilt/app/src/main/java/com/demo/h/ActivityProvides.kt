@@ -1,4 +1,4 @@
-package com.demo.c
+package com.demo.h
 
 import android.os.Bundle
 import android.widget.Button
@@ -16,7 +16,7 @@ class ActivityProvides : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_provides)
+        setContentView(R.layout.activity_hilt)
 
         val infoView: TextView = findViewById(R.id.info_view)
         val infoButton: Button = findViewById(R.id.info_button)

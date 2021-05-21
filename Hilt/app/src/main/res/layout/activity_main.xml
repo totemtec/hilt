@@ -10,19 +10,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Inject"
-        android:onClick="gotoActivityInject"/>
+        android:onClick="gotoInject"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Module"
+        android:onClick="gotoModule"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scoped"
+        android:onClick="gotoScoped"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Binds"
-        android:onClick="gotoActivityBinds"/>
+        android:onClick="gotoBinds"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Provides"
-        android:onClick="gotoActivityProvides"/>
+        android:onClick="gotoProvides"/>
 
 
 </LinearLayout>
