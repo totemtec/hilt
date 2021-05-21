@@ -9,7 +9,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class ActivityProvides : AppCompatActivity() {
+class ActivitySpecificBinding : AppCompatActivity() {
 
     @Inject @MadeInCN lateinit var chinaCar:ChinaCar
     @Inject @MadeInUSA lateinit var chinaCar2:ChinaCar

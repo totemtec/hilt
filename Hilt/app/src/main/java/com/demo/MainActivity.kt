@@ -10,6 +10,8 @@ import com.demo.c.ActivityScope
 import com.demo.d.ActivityDefaultBinding
 import com.demo.e.ActivityPredefinedQualifiers
 import com.demo.f.ActivityJetpack
+import com.demo.g.ActivityBinds
+import com.demo.h.ActivitySpecificBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -46,6 +48,16 @@ class MainActivity : AppCompatActivity() {
 
     fun gotoJetpackViewModel(v: View) {
         val intent = Intent(this, ActivityJetpack::class.java)
+        startActivity(intent)
+    }
+
+    fun gotoBinds(v: View) {
+        val intent = Intent(this, ActivityBinds::class.java)
+        startActivity(intent)
+    }
+
+    fun gotoSpecificBinding(v: View) {
+        val intent = Intent(this, ActivitySpecificBinding::class.java)
         startActivity(intent)
     }
 }

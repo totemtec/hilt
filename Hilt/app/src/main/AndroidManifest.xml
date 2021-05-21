@@ -21,7 +21,7 @@
 
         <activity android:name=".a.ActivityInject"/>
         <activity android:name=".g.ActivityBinds"/>
-        <activity android:name=".h.ActivityProvides"/>
+        <activity android:name=".h.ActivitySpecificBinding"/>
         <activity android:name=".b.ActivityModule" />
         <activity android:name=".c.ActivityScope" />
         <activity android:name=".c.ActivitySecond" />

@@ -45,14 +45,14 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Binds"
+        android:text="Binds Implementation"
         android:onClick="gotoBinds"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Provides"
-        android:onClick="gotoProvides"/>
+        android:text="Specific Binding"
+        android:onClick="gotoSpecificBinding"/>
 
 
 </LinearLayout>
