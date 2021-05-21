@@ -11,11 +11,11 @@ import javax.inject.Named
 
 @Component(modules = [EngineModule::class])
 interface AnnotationComponent {
-    fun inject(activity: ActivityAnnotation)
+    fun inject(activity: ActivityQualifier)
 }
 
 
-class ActivityAnnotation : AppCompatActivity() {
+class ActivityQualifier : AppCompatActivity() {
 
     @Inject
     @MadeInUSA

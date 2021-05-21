@@ -50,7 +50,7 @@
         <activity android:name=".zee.chapter02.f.ActivitySubcomponent" />
         <activity android:name=".zee.chapter02.f.SecondActivity" />
         <activity android:name=".zee.chapter02.g.ActivityBinds" />
-        <activity android:name=".zee.chapter02.h.ActivityAnnotation" />
+        <activity android:name=".zee.chapter02.h.ActivityQualifier" />
 
     </application>
 

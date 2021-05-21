@@ -13,7 +13,7 @@ import com.demo.zee.chapter02.d.ActivityScope
 import com.demo.zee.chapter02.e.ActivityDependency
 import com.demo.zee.chapter02.f.ActivitySubcomponent
 import com.demo.zee.chapter02.g.ActivityBinds
-import com.demo.zee.chapter02.h.ActivityAnnotation
+import com.demo.zee.chapter02.h.ActivityQualifier
 
 
 class ZeeActivity : AppCompatActivity() {
@@ -68,7 +68,7 @@ class ZeeActivity : AppCompatActivity() {
     }
 
     fun chapter02h(v: View) {
-        val intent = Intent(this, ActivityAnnotation::class.java)
+        val intent = Intent(this, ActivityQualifier::class.java)
         startActivity(intent)
     }
 }
