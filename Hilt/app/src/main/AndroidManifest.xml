@@ -25,6 +25,8 @@
         <activity android:name=".b.ActivityModule" />
         <activity android:name=".c.ActivityScope" />
         <activity android:name=".c.ActivitySecond" />
+        <activity android:name=".d.ActivityDefaultBinding" />
+        <activity android:name=".e.ActivityPredefinedQualifiers" />
 
     </application>
 

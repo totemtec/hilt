@@ -27,6 +27,18 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Default Bindings"
+        android:onClick="gotoDefaultBinding"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predefined Qualifier"
+        android:onClick="gotoPredefinedQualifier"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Binds"
         android:onClick="gotoBinds"/>
 

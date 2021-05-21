@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.demo.a.ActivityInject
 import com.demo.b.ActivityModule
 import com.demo.c.ActivityScope
+import com.demo.d.ActivityDefaultBinding
+import com.demo.e.ActivityPredefinedQualifiers
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,6 +29,17 @@ class MainActivity : AppCompatActivity() {
 
     fun gotoScoped(v: View) {
         val intent = Intent(this, ActivityScope::class.java)
+        startActivity(intent)
+    }
+
+
+    fun gotoDefaultBinding(v: View) {
+        val intent = Intent(this, ActivityDefaultBinding::class.java)
+        startActivity(intent)
+    }
+
+    fun gotoPredefinedQualifier(v: View) {
+        val intent = Intent(this, ActivityPredefinedQualifiers::class.java)
         startActivity(intent)
     }
 
